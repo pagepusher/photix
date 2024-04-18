@@ -25,7 +25,7 @@ I needed it, so I built it; photix is a portable operating system (OS) aimed at 
 - software: darktable, gimp, scribus, inkscape
 
 ### Build your own!
-It's easy to build the iso yourself, simply clone this repositiory or download the two files **build.sh** & **tweaks.sh** into a folder of your choice on a debia based linux distro or a debian instance on Windows 10/11 wsl2 environment. Install the pre-requistite software:
+It's easy to build the iso yourself, simply clone this repositiory or download the two files **build.sh** & **tweaks.sh** into a folder of your choice on a debian based linux distro or a debian instance on Windows 10/11 wsl2 environment. Install the pre-requistite software:
 `sudo apt install live-build`
 Then make the two files executable.
 `chmod +x build.sh tweaks.sh`
