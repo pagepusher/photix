@@ -9,6 +9,8 @@ I needed it, so I built it; photix is a portable operating system (OS) aimed at 
 - clean, modern desktop – built on debian stable and the gnome desktop environment
 - raw photo processing – powerful photo library management and raw processing with darktable (think lightroom)
 - photo editor – image retouching and editing with gimp (think photoshop)
+- vector graphics – drawing complex scalable graphics with inkscape (think Illustrator)
+- publication design – create preofessional magazine, book and brochures with scribus (think InDesign) 
 - system utilities – comes with a set of standard system utilities; file manager, terminal etc.
 - runs in live mode – write the .iso file to a usb key or cdrom and boot most modern computers (doesn't require installation)
 - Installable – if you like photix, you can install it on your computer and add extra software packages to create your perfect desktop
