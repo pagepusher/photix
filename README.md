@@ -35,4 +35,7 @@ Then build the iso.
 The script will run, download all the neccessary packages direct from debian servers, inject the tweaks.sh script into the newly built environment which will then be run as the os is being built to apply my customisations. Eventually, (this can take a long time depending on the power of your cpu), the script will complete and you will have a freshly milled **photix-amd64.hybrid.iso**
 
 ### Test the iso
-If you have qemu installed you can test the iso `qemu-system-x64 -m 2G -cdrom photix-amd64.hybrid.iso -boot d` 
+If you have qemu installed you can test the iso `qemu-system-x64 -m 2G -cdrom photix-amd64.hybrid.iso -boot d` it will boot very slowly but it's a good way to test the build has worked.
+
+### Burn the iso to a usb key
+You can create a bootable usb key easily with a number of cross platform gui tools; rufus, fedora media writer. Failing that there is always good old **dd** on debian. 
