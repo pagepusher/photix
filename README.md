@@ -11,15 +11,24 @@ I needed it, so I built it; photix is a portable operating system (OS) aimed at 
 - photo editor – image retouching and editing with gimp (think photoshop)
 - vector graphics – drawing complex scalable graphics with inkscape (think Illustrator)
 - publication design – create preofessional magazine, book and brochures with scribus (think InDesign) 
-- system utilities – comes with a set of standard system utilities; file manager, terminal etc.
+- system utilities – comes with a set of standard system utilities; web browser, file manager, terminal etc.
 - runs in live mode – write the .iso file to a usb key or cdrom and boot most modern computers (doesn't require installation)
 - Installable – if you like photix, you can install it on your computer and add extra software packages to create your perfect desktop
 
 ### Details
 - base: debian stable 64bit
 - desktop: gnome
-- build environment: debian stable running on windows 10/11 wsl2
+- build environment: debian stable (bookworm) running on windows 10/11 wsl2
 - build tool: live-build
-- customisations: dash to dock gnome-shell-extension
+- customisations: dash-to-dock gnome-shell-extension, wallpaper
 - localisation: British, UK keyboard
 - software: darktable, gimp, scribus, inkscape
+
+### Build your own!
+It's easy to build the iso yourself, simply clone this repositiory or download the two files **build.sh** & **tweaks.sh** into a folder of your choice on a debia based linux distro or a debian instance on Windows 10/11 wsl2 environment. Install the pre-requistite software:
+`sudo apt install live-build`
+Then make the two files executable.
+`chmod +x build.sh tweaks.sh`
+Then build the iso.
+`./build.sh`
+The script will run, download all the neccessary packages direct from debian servers, inject the tweaks.sh script into the newly built environment which will then be run as the os is being built to apply my customisations. Eventually, (this can take a long time depending on the power of your cpu, the script will complete and you will have a freshly milled **photix-amd64.hybrid.iso**
