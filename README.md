@@ -22,10 +22,10 @@ Installable – if you like photix, you can install it on your computer and add 
 
 ### Details
 
-base: debian stable 64bit
-desktop: gnome
-build environment: debian stable running on windows 11 wsl2
-build tool: live-build
-customisations: dash to dock gnome-shell-extension
-localisation: British, UK keyboard
-software: darktable, gimp, scribus, inkscape
+- base: debian stable 64bit
+- desktop: gnome
+- build environment: debian stable running on windows 10/11 wsl2
+- build tool: live-build
+- customisations: dash to dock gnome-shell-extension
+- localisation: British, UK keyboard
+- software: darktable, gimp, scribus, inkscape
