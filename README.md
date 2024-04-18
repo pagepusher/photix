@@ -1,7 +1,6 @@
 # photix
 
-## Your pro-photo, pocket operating system.
-### A debian re-spin.
+## Your pro-photo, pocket operating system. A debian re-spin.
 
 About the project
 
