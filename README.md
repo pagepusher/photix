@@ -13,6 +13,7 @@ I needed it, so I built it; photix is a portable operating system (OS) aimed at 
 - publication design – create preofessional magazine, book and brochures with scribus (think InDesign) 
 - system utilities – comes with a set of standard system utilities; web browser, file manager, terminal etc.
 - runs in live mode – write the .iso file to a usb key or cdrom and boot most modern computers (doesn't require installation)
+- hardware support – extra firmware packages so common wifi cards and other hardware function correctly
 - Installable – if you like photix, you can install it on your computer and add extra software packages to create your perfect desktop
 
 ### Details
