@@ -1,9 +1,9 @@
 # photix
 
-## Your pro-photo, pocket operating system. A debian linux live re-spin
+## A debian linux live re-spin aimed at photographers and creatives.
 ![photix-live-linux-desktop-screenshot](https://github.com/pagepusher/photix/blob/main/photix-desktop.png)
 ### About the project
-I needed it, so I built it; photix is a portable operating system aimed at photographers, creatives or anyone looking for a go anywhere, boot anything (almost anything; sorry Apple silicon) desktop that can be used to download photos from a digital camera, perform sophisticated raw photo processing and editing, browse the web and more. The iso image can be written to a usb stick or burned to a cd and since photix is a 'live' linux os, it runs entirely in memory and doesn't require installation. If you like it, you can also use it as a base for your own project or even install it on your computer for a clean, fast and modern desktop experience.
+I needed it, so I built it; photix is your pro-photo, pocket operating system aimed at photographers, creatives or anyone looking for a go anywhere, boot anything (almost anything; sorry Apple silicon) desktop that can be used to download photos from a digital camera, perform sophisticated raw photo processing and editing, browse the web and more. The iso image can be written to a usb stick or burned to a cd and since photix is a 'live' linux os, it runs entirely in memory and doesn't require installation. If you like it, you can also use it as a base for your own project or even install it on your computer for a clean, fast and modern desktop experience.
 
 ### Features
 - clean, modern desktop – built on debian stable and the gnome desktop environment
