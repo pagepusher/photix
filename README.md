@@ -27,15 +27,21 @@ I needed it, so I built it; photix is a portable operating system aimed at photo
 
 ### Build your own!
 It's easy to build the iso yourself, simply clone this repositiory or download the two files **build.sh** & **tweaks.sh** into a folder of your choice on a debian based linux distro or a debian instance on Windows 10/11 wsl2 environment. Install the pre-requistite software:
-`sudo apt install live-build`
+```
+sudo apt install live-build
+```
 Then make the two files executable.
-`chmod +x build.sh tweaks.sh`
+```
+chmod +x build.sh tweaks.sh
+```
 Then build the iso.
-`./build.sh`
+```
+./build.sh
+```
 The script will run, download all the neccessary packages direct from debian servers, inject the tweaks.sh script into the newly built environment which will then be run as the os is being built to apply my customisations. Eventually, (this can take a long time depending on the power of your cpu), the script will complete and you will have a freshly milled **photix-amd64.hybrid.iso**
 
 ### Test the iso
-If you have qemu installed you can test the iso
+If you have qemu installed, you can test the iso
 ```
 qemu-system-x64 -m 2G -cdrom photix-amd64.hybrid.iso -boot d
 ```
