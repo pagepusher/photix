@@ -36,7 +36,9 @@ The script will run, download all the neccessary packages direct from debian ser
 
 ### Test the iso
 If you have qemu installed you can test the iso
-```qemu-system-x64 -m 2G -cdrom photix-amd64.hybrid.iso -boot d```
+```
+qemu-system-x64 -m 2G -cdrom photix-amd64.hybrid.iso -boot d
+```
 it will boot very slowly but it's a good way to test the build has worked.
 
 ### Burn the iso to a usb key
