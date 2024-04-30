@@ -49,5 +49,5 @@ If you have qemu installed, you can test the iso. It will boot very slowly but i
 qemu-system-x64 -m 2G -cdrom photix-amd64.hybrid.iso -boot d
 ```
 
-### Burn the iso to a usb key
+### Write the iso to a usb key
 You can create a bootable usb key easily with a number of cross platform gui tools; rufus & fedora media writer being a couple of good examples. Failing that there is always good old **dd** on debian. Instructions on how to do this are specific to the machine being used and so are out of the scope of this page.
