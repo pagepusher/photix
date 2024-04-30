@@ -34,9 +34,9 @@ Then make the two files executable.
 ```
 chmod +x build.sh tweaks.sh
 ```
-Then build the iso.
+Then build the iso. (Requires elevated permissions so use the sudo command or run as root).
 ```
-./build.sh
+sudo ./build.sh
 ```
 The script will run, download all the neccessary packages direct from debian servers, inject the tweaks.sh script into the newly built environment which will then be run as the os is being built to apply my customisations. Eventually, (this can take a long time depending on the power of your cpu), the script will complete and you will have a freshly milled **photix-amd64.hybrid.iso**
 
