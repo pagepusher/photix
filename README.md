@@ -46,7 +46,7 @@ The script will run, download all the neccessary packages direct from debian ser
 ### Test the iso
 If you have qemu installed, you can test the iso. It will boot very slowly but it's a good way to test the build has worked. It is possible to use KVM accelerated qemu guest, information on how to do this can be found elsewhere on the web.
 ```
-qemu-system-x64 -m 2G -cdrom photix-amd64.hybrid.iso -boot d
+qemu-system-x86_64 -cdrom photix-amd64.hybrid.iso -m 4G -boot d
 ```
 
 ### Write the iso to a usb key
