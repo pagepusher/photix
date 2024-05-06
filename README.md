@@ -50,4 +50,4 @@ qemu-system-x86_64 -cdrom photix-amd64.hybrid.iso -m 4G -boot d
 ```
 
 ### Write the iso to a usb key
-You can create a bootable usb key easily with a number of cross platform gui tools; **rufus** & **fedora media writer** being a couple of good examples. Failing that there is always good old **dd** on debian. Instructions on how to do this are specific to the machine being used and so are out of the scope of this page.
+You can create a bootable usb key easily with a number of cross platform gui tools; rufus & fedora media writer being a couple of good examples. Failing that there is always good old **dd** on debian. Instructions on how to do this are specific to the machine being used and so are out of the scope of this page.
