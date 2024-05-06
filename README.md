@@ -37,7 +37,7 @@ Then make the two files executable.
 ```
 chmod +x build.sh tweaks.sh
 ```
-Then build the iso. (Requires elevated permissions so use the sudo command or run as root).
+Then build the iso.
 ```
 sudo ./build.sh
 ```
