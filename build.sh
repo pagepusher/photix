@@ -1,26 +1,27 @@
 #!/bin/sh
-# build script to generate photix live distro
+# shell script to generate the photix live linux iso image
 #
 # clean any previous builds
 lb clean
 #
-# list of desktop packages to install
+# the 'SYS' variable is a list of system packages to install
 SYS="gdm3 \
 task-laptop \
 gnome-core \
 gnome-shell-extension-dashtodock"
 #
-# list of apps to install
+# the 'APPS' variable is a list of creative apps to install
 APPS="epiphany-browser \
 darktable \
 gimp \
 inkscape \
 scribus"
 #
-# hostname
+# the 'HOST' variable is the hostname of our build
 HOST=photix
 #
-# config the build environment
+# let's configure the build environment
+# see the live-build documentation for more info on these options
 lb config noauto --archive-areas "main contrib non-free non-free-firmware" \
 --architecture amd64 \
 --distribution bookworm \
@@ -40,24 +41,26 @@ lb config noauto --archive-areas "main contrib non-free non-free-firmware" \
 --firmware-chroot true \
 --parent-archive-areas "main contrib non-free non-free-firmware"
 #
-# write the package list
+# write the package lists to the config folder
 echo $SYS > config/package-lists/system.list.chroot
 echo $APPS > config/package-lists/apps.list.chroot
 #
-# add background wallpaper
+# uncomment the next two lines to add a custom background wallpaper file named 'photix-wallpaper.jpg'
 # mkdir -p config/includes.chroot/usr/share/backgrounds
 # cp photix-wallpaper.jpg config/includes.chroot/usr/share/backgrounds
 #
-# add tweaks script 
+# add the tweaks script
 cp tweaks.sh config/hooks/live/customise.hook.chroot
 #
-# add customised boot splash
+# add the bootloader
 cp -r /usr/share/live/build/bootloaders/isolinux config/bootloaders
+# uncomment the next  2 lines to add a custom boot screen wallpaper named 'photix-splash.png'
 # cp photix-splash.png config/bootloaders/isolinux/splash.png
 cp -r /usr/share/live/build/bootloaders/grub-pc config/bootloaders
 # cp photix-splash.png config/bootloaders/grub-pc/splash.png
 #
-# let's make sure apt is configured correctly
+# let's make sure that the package manager apt is configured correctly
+# we'll also load in the extra firmware during this step
 printf "#!/bin/sh \n
 sed -i 's/main/main contrib non-free non-free-firmware/' /etc/apt/sources.list \n
 apt update \n
@@ -73,13 +76,14 @@ firmware-cavium \
 firmware-libertas \
 firmware-ti-connectivity" > config/hooks/live/apt.hook.chroot
 #
-# set low-res splash screen
+# set low-res boot splash screen
 sed -i 's/gfxmode=auto/gfxmode=1024x768/' config/bootloaders/grub-pc/config.cfg
 #
-# remove annoying beep
+# remove the annoying boot screen beep
+# seems to only work for bios boot, not UEFI
 sed -i 's/play 960/#play 960/' config/bootloaders/grub-pc/config.cfg
 #
-# let's build the thing
-echo "we're ready to build!"
+# let's build this thing
+echo "OK, we're ready to build!"
 lb build
 
