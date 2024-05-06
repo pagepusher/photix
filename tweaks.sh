@@ -13,18 +13,17 @@ primary-color='#241f31'\n
 secondary-color='#000000'" > /etc/dconf/db/local.d/00-background
 #
 # set the favourite apps
-printf "# Snippet sets gedit, terminal and nautilus as default favorites for all users\n
+printf "# sets web, nautilus, darktable, gimp, inkscape & scribus as default favorites for all users\n
 [org/gnome/shell]\n
 favorite-apps = ['org.gnome.Epiphany.desktop', 'org.gnome.Nautilus.desktop', 'org.darktable.darktable.desktop', 'gimp.desktop', 'org.inkscape.Inkscape.desktop', 'scribus.desktop']" > /etc/dconf/db/local.d/00-favorite-apps
 #
-# enable extensions
+# enable the dash to dock gnome extension
 printf "[org/gnome/shell]\n
-# List all extensions that you want to have enabled for all users\n
+# list all extensions that you want to have enabled for all users\n
 enabled-extensions=['dash-to-dock@micxgx.gmail.com']" > /etc/dconf/db/local.d/00-extensions
 #
-# set dark gtk theme and icon
+# set dark gtk theme
 printf "[org/gnome/desktop/interface]\n
 gtk-theme='Adwaita-dark'" > /etc/dconf/db/local.d/00-theme
 # update the settings database
 dconf update
-
