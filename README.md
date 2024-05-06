@@ -29,7 +29,7 @@ I'm not a developer or a scripting expert. I just researched how to do this and 
 - Software: darktable, gimp, scribus, inkscape
 
 ### Build your own!
-It's easy to build the iso yourself, simply clone this repositiory or download the two files [build.sh](https://github.com/pagepusher/photix/blob/main/build.sh) & [tweaks.sh](https://github.com/pagepusher/photix/blob/main/tweaks.sh) into a folder of your choice on a debian based linux distro or a debian instance on Windows 10/11 WSL environment. Install the pre-requistite software:
+It's easy to build the iso yourself, simply clone this repository or download the two files [build.sh](https://github.com/pagepusher/photix/blob/main/build.sh) & [tweaks.sh](https://github.com/pagepusher/photix/blob/main/tweaks.sh) into a folder of your choice on a debian based linux distro or a debian instance on Windows 10/11 WSL environment. Install the prerequisite software:
 ```
 sudo apt install live-build
 ```
@@ -41,10 +41,10 @@ Then build the iso.
 ```
 sudo ./build.sh
 ```
-The script will run, download all the neccessary packages direct from debian servers, inject the tweaks.sh script into the newly built environment which will then be run as the os is being built to apply my customisations. Eventually, (this can take a long time depending on the power of your cpu), the script will complete and you will have a freshly milled iso file named: **photix-amd64.hybrid.iso**
+The script will run, download all the necessary packages direct from debian servers, inject the tweaks.sh script into the newly built environment which will then be run as the os is being built to apply my customisations. Eventually, (this can take a long time depending on the power of your cpu), the script will complete and you will have a freshly milled iso file named: **photix-amd64.hybrid.iso**
 
 ### Test the iso
-If you have qemu installed, you can test the iso. It will boot very slowly but it's a good way to test the build has worked. It is possible to use KVM accelerated qemu guest, information on how to do this can be found elsewhere on the web.
+If you have qemu installed, you can test the iso. It will boot very slowly but it's a good way to check that the build has worked. It is possible to use KVM accelerated qemu guest, information on how to do this can be found elsewhere on the web.
 ```
 qemu-system-x86_64 -cdrom photix-amd64.hybrid.iso -m 4G -boot d
 ```
