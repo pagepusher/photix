@@ -29,7 +29,7 @@ I'm not a developer or a scripting expert. I just researched how to do this and 
 - Software: darktable, gimp, scribus, inkscape
 
 ### Build your own!
-It's easy to build the iso yourself, simply clone this repositiory or download the two files **build.sh** & **tweaks.sh** into a folder of your choice on a debian based linux distro or a debian instance on Windows 10/11 WSL environment. Install the pre-requistite software:
+It's easy to build the iso yourself, simply clone this repositiory or download the two files **[build.sh](https://github.com/pagepusher/photix/blob/main/build.sh)** & **tweaks.sh** into a folder of your choice on a debian based linux distro or a debian instance on Windows 10/11 WSL environment. Install the pre-requistite software:
 ```
 sudo apt install live-build
 ```
