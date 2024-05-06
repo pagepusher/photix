@@ -6,7 +6,7 @@
 I needed it, so I built it; photix is a 'live' operating system aimed at photographers, creatives or anyone looking for a go anywhere, boot anything (almost anything; sorry Apple silicon) desktop that can be used to download photos from a digital camera, perform sophisticated raw photo processing and editing, browse the web and more. The iso image can be written to a usb stick or burned to a cd and since photix is a 'live' linux os, it runs entirely in memory and doesn't require installation. If you like it, you can also use it as a base for your own project or even install it on your computer for a clean, fast and modern desktop experience.
 
 ### Disclaimer
-I'm not a developer or a scripting expert. I just researched how to do this and taught myself the techniques required. I'm 100% certain these scripts could be streamlined or improved. Whilst they have been extensively tested, they are offered here with no garuantee that they won't shred your hard drive, sell your data or steal your lunch. ;) Proceed at your own risk! 
+I'm not a developer or a scripting expert. I just researched how to do this and taught myself the techniques required. I'm 100% certain these scripts could be streamlined or improved. Whilst they have been extensively tested, they are offered here with no guarantee that they won't shred your hard drive, sell your data or steal your lunch. ;) Proceed at your own risk! 
 
 ### Features
 - Clean, modern desktop – built on debian stable and the gnome desktop environment
